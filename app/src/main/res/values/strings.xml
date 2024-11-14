@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BuyList</string>
+    <string name="item_total_price">total price</string>
+    <string name="item_name">name</string>
+    <string name="item_amount">amount</string>
+    <string name="delete">DELETE</string>
+    <string name="minus">MINUS</string>
+    <string name="plus">PLUS</string>
+    <string name="purchased">PURCHASED</string>
+    <string name="total_price_format">$%.2f</string>
+    <string name="add">ADD</string>
+    <string name="title">Add a new item</string>
+    <string name="cancel">CANCEL</string>
+</resources>
