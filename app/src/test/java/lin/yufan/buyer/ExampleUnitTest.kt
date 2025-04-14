@@ -1,4 +1,4 @@
-package lin.yufan.buylist
+package lin.yufan.buyer
 
 import org.junit.Test
 

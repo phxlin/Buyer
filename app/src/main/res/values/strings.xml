@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BuyList</string>
+    <string name="app_name">Buyer</string>
     <string name="item_total_price">total price</string>
     <string name="item_name">name</string>
     <string name="item_amount">amount</string>
@@ -11,4 +11,5 @@
     <string name="add">ADD</string>
     <string name="title">Add a new item</string>
     <string name="cancel">CANCEL</string>
+    <string name="dollar_sign">$</string>
 </resources>

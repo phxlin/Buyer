@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "BuyList"
+rootProject.name = "Buyer"
 include ':app'

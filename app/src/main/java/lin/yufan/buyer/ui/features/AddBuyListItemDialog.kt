@@ -1,34 +1,35 @@
-package lin.yufan.buylist.ui.features
+package lin.yufan.buyer.ui.features
 
 import android.content.Context
 import android.os.Bundle
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDialog
-import lin.yufan.buylist.R
-import lin.yufan.buylist.data.model.ShoppingListItem
+import lin.yufan.buyer.data.model.BuyListItem
+import lin.yufan.buyer.databinding.DialogAddBuyListItemBinding
 
-class AddShoppingItemDialog(
+class AddBuyListItemDialog(
     context: Context,
     private var addDialogListener: AddDialogListener
 ) : AppCompatDialog(context) {
 
+    private lateinit var binding: DialogAddBuyListItemBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.dialog_add_shopping_item)
+        binding = DialogAddBuyListItemBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        findViewById<TextView>(R.id.tvAdd)?.setOnClickListener {
-            val name = findViewById<EditText>(R.id.etName)?.text.toString()
-            val totalPrice = findViewById<EditText>(R.id.etTotalPrice)?.text.toString()
-            val amount = findViewById<EditText>(R.id.etAmount)?.text.toString()
+        binding.tvAdd.setOnClickListener {
+            val name = binding.etName.text.toString()
+            val totalPrice = binding.etTotalPrice.text.toString()
+            val amount = binding.etAmount.text.toString()
 
             if (name.isEmpty() || totalPrice.isEmpty() || amount.isEmpty()) {
                 Toast.makeText(context, "Missing information", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            val item = ShoppingListItem(
+            val item = BuyListItem(
                 name = name,
                 unitPrice = totalPrice.toDouble() / amount.toInt(),
                 totalPrice = totalPrice.toDouble(),
@@ -39,7 +40,7 @@ class AddShoppingItemDialog(
             dismiss()
         }
 
-        findViewById<TextView>(R.id.tvCancel)?.setOnClickListener {
+        binding.tvCancel.setOnClickListener {
             cancel()
         }
     }

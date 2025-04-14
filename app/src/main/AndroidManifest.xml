@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="lin.yufan.buylist">
+    package="lin.yufan.buyer">
 
     <application
-        android:name=".BuyListApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.BuyListActivity"
+            android:name="lin.yufan.buyer.ui.BuyListActivity"
             android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
