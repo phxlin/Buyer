@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/notePad"
     android:orientation="vertical"
     android:padding="5dp"
     tools:context=".ui.BuyListActivity">
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/add"
         android:src="@drawable/ic_add"
-        android:tint="@color/colorPrimaryDark"
+        android:tint="@color/notePadBoard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
